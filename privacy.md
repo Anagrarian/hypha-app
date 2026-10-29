@@ -25,4 +25,4 @@ Hypha is an Android app that adds captions to your videos. It is made by Anagrar
 Hypha is meant for people 13 and older.
 
 ## Contact
-Questions: email hyphatheapp@proton.me, or open an issue at https://github.com/Anagrarian/caption-app/issues
+Questions: email hyphatheapp@proton.me, or open an issue at https://github.com/Anagrarian/hypha-app/issues
