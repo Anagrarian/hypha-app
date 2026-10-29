@@ -16,6 +16,11 @@ Hypha is an Android app that adds captions to your videos. It is made by Anagrar
 - **Other sites (when added):** the same way: only what you choose to post, to your own account, after you sign in.
 - **Updates:** the app checks GitHub for a newer version; only the app's version number is involved.
 
+## Early list (only if you join)
+If you join the Hypha early list by email, we keep your email address and what you choose to
+tell us, in the Hypha email account (Proton Mail). We use it only for Hypha news, early versions
+and questions about Hypha. We never sell or share it. Reply "stop" any time and we delete it.
+
 ## Removing access and data
 - To stop the app using your Google account, remove "Hypha" at https://myaccount.google.com/permissions
 - To delete everything the app keeps on your phone, uninstall it (or Settings → Apps → Hypha → Storage → Clear data).
