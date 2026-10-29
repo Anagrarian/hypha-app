@@ -12,6 +12,7 @@ Your videos and words stay on your phone. No ads, no tracking.
 After that, use **Help → Update** inside Hypha to get new versions.
 
 ## Pages
+- [Testing Hypha](testing.md): for early testers, 10 minutes
 - [Privacy policy](privacy.md)
 - [Terms of service](terms.md)
 - [All versions](https://github.com/Anagrarian/hypha-app/releases)
