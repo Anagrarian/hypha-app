@@ -1,0 +1,15 @@
+{
+  "client_id": "https://anagrarian.github.io/hypha-app/oauth-client-metadata.json",
+  "client_name": "Hypha",
+  "client_uri": "https://anagrarian.github.io/hypha-app/",
+  "logo_uri": "https://anagrarian.github.io/hypha-app/hypha-icon-512.png",
+  "tos_uri": "https://github.com/Anagrarian/hypha-app/blob/main/terms.md",
+  "policy_uri": "https://github.com/Anagrarian/hypha-app/blob/main/privacy.md",
+  "application_type": "native",
+  "grant_types": ["authorization_code", "refresh_token"],
+  "response_types": ["code"],
+  "scope": "atproto repo:app.bsky.feed.post?action=create blob?accept=video/*&accept=text/vtt",
+  "redirect_uris": ["io.github.anagrarian:/bluesky"],
+  "token_endpoint_auth_method": "none",
+  "dpop_bound_access_tokens": true
+}
