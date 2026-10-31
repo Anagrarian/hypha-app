@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hypha: captions on your phone</title>
+<meta name="description" content="Hypha puts clear captions on your videos, right on your Android phone. No uploading, no ads, no tracking.">
+<link rel="icon" href="hypha-icon-512.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700&display=swap">
+<style>
+:root{
+  --bg:#f6f1e7; --panel:#fffaf0; --ink:#2a1d14; --muted:#6e5b4c; --line:#e3d6bf;
+  --accent:#d65a3c; --accent-ink:#fff; --field:#d7e8b9; --fence:#7a5a3a;
+  --gate1:#2f6fa8; --gate2:#2f8a57; --gate3:#8a6a2f; --no:#b4531c;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#191512; --panel:#231e19; --ink:#f3ece3; --muted:#bfae9c; --line:#3b3229;
+  --accent:#f0805f; --accent-ink:#191512; --field:#2e3f22; --fence:#c9a37a;
+  --gate1:#7fb0e0; --gate2:#6cc497; --gate3:#d1b06f; --no:#f08a5b;}}
+:root[data-theme="dark"]{
+  --bg:#191512; --panel:#231e19; --ink:#f3ece3; --muted:#bfae9c; --line:#3b3229;
+  --accent:#f0805f; --accent-ink:#191512; --field:#2e3f22; --fence:#c9a37a;
+  --gate1:#7fb0e0; --gate2:#6cc497; --gate3:#d1b06f; --no:#f08a5b;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Atkinson Hyperlegible",system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px 16px 56px;display:grid;gap:40px}
+h1,h2{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.2rem,8vw,3.2rem)} h2{font-size:1.6rem}
+p{margin:0} a{color:var(--accent)}
+.hero{display:grid;gap:14px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:56px;height:56px;border-radius:14px}
+.brand span{font-weight:700;font-size:1.2rem}
+.lead{font-size:1.2rem;color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line)}
+section{display:grid;gap:14px}
+.cards{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.card b{display:block;font-size:1.05rem;margin-bottom:2px}
+.card span{color:var(--muted);font-size:.95rem}
+/* Privacy picture: stacks top to bottom, so it reads on a narrow phone */
+.farm{background:var(--field);border:3px dashed var(--fence);border-radius:28px;padding:16px;display:grid;gap:10px}
+.farm h3{margin:0;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+.inside{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.inside div{background:var(--panel);border-radius:12px;padding:10px 12px;font-size:.95rem}
+.inside b{display:block}
+.gates{display:grid;gap:10px}
+.gate{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;background:var(--panel);border:2px solid var(--c);border-radius:14px;padding:12px}
+.gate svg{width:44px;height:44px}
+.gate small{display:block;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--c);font-size:.75rem}
+.gate b{display:block}
+.gate span{color:var(--muted);font-size:.95rem}
+.barn{background:var(--panel);border:2px solid var(--fence);border-radius:14px;padding:12px 14px}
+.never{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;list-style:none;padding:0;margin:0}
+.never li::before{content:"✕";color:var(--no);font-weight:700;margin-right:8px}
+.note{color:var(--muted);font-size:.9rem}
+footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16px}
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="brand"><img src="hypha-icon-512.png" alt=""><span>Hypha</span></div>
+    <h1>Clear captions on your videos, right on your phone.</h1>
+    <p class="lead">Hypha listens to your video and writes the words on screen. It all happens on your phone: no uploading, no ads, no tracking. Every word counts.</p>
+    <div class="btns">
+      <a class="btn" href="https://github.com/Anagrarian/hypha-app/blob/main/testers.md">Be an Android tester</a>
+      <a class="btn ghost" href="https://github.com/Anagrarian/hypha-app/blob/main/join.md">Join the early list</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="what">
+    <h2 id="what">What Hypha does</h2>
+    <div class="cards">
+      <div class="card"><b>Writes the words</b><span>Speech to text, offline, on your phone.</span></div>
+      <div class="card"><b>Lets you fix them</b><span>Tap a word to correct it; set the look, size and place.</span></div>
+      <div class="card"><b>Saves a finished video</b><span>Captions burned in, plus a cover picture. Your original stays untouched.</span></div>
+      <div class="card"><b>Helps you post</b><span>To YouTube, Bluesky and your other apps, only when you choose.</span></div>
+    </div>
+    <p class="note">Android for now; iPhone is on the way. Made by a farmer and creator, one piece at a time.</p>
+  </section>
+
+  <section aria-labelledby="see">
+    <h2 id="see">What Hypha can see: your farm, your fence</h2>
+    <p>Your phone is your farm. Hypha works inside your fence. Nothing leaves unless you open a gate.</p>
+    <div class="farm">
+      <h3>Inside your fence (your phone)</h3>
+      <div class="inside">
+        <div><b>🎥 Your videos</b>stay in your gallery, untouched</div>
+        <div><b>🎙️ Your voice → words</b>turned into text right here</div>
+        <div><b>📝 Captions and edits</b>kept on your phone</div>
+        <div><b>💾 Backups</b>saved where you choose</div>
+      </div>
+    </div>
+    <div class="gates">
+      <div class="gate" style="--c:var(--gate1)"><svg viewBox="0 0 44 44" aria-hidden="true"><g stroke="currentColor" stroke-width="4" style="color:var(--gate1)"><line x1="6" y1="8" x2="6" y2="38"/><line x1="38" y1="8" x2="38" y2="38"/><line x1="6" y1="16" x2="38" y2="16"/><line x1="6" y1="30" x2="38" y2="30"/><line x1="6" y1="30" x2="38" y2="16"/></g></svg>
+        <div><small>AI helper gate · off unless you turn it on</small><b>Anthropic (AI)</b><span>Only the caption words, with your own key. Never the video or sound.</span></div></div>
+      <div class="gate" style="--c:var(--gate2)"><svg viewBox="0 0 44 44" aria-hidden="true"><g stroke="currentColor" stroke-width="4" style="color:var(--gate2)"><line x1="6" y1="8" x2="6" y2="38"/><line x1="38" y1="8" x2="38" y2="38"/><line x1="6" y1="16" x2="38" y2="16"/><line x1="6" y1="30" x2="38" y2="30"/><line x1="6" y1="30" x2="38" y2="16"/></g></svg>
+        <div><small>Posting gate · when you post</small><b>YouTube, Bluesky, your other apps</b><span>Only the video you pick, to your own account, with the words you write.</span></div></div>
+      <div class="gate" style="--c:var(--gate3)"><svg viewBox="0 0 44 44" aria-hidden="true"><g stroke="currentColor" stroke-width="4" style="color:var(--gate3)"><line x1="6" y1="8" x2="6" y2="38"/><line x1="38" y1="8" x2="38" y2="38"/><line x1="6" y1="16" x2="38" y2="16"/><line x1="6" y1="30" x2="38" y2="30"/><line x1="6" y1="30" x2="38" y2="16"/></g></svg>
+        <div><small>Update gate · checking for a new version</small><b>GitHub</b><span>Just the app's version number.</span></div></div>
+    </div>
+    <div class="barn"><b>Hypha's barn (us)</b> holds only your email, and only if you join the early list or sign up to test. Reply "stop" and it's deleted.</div>
+    <div class="card">
+      <b>We, Hypha's makers, never see</b>
+      <ul class="never">
+        <li>your videos</li><li>your voice</li><li>your captions</li><li>where you are</li><li>your contacts</li><li>your other apps</li>
+      </ul>
+    </div>
+    <p class="note">Close a gate any time. Uninstall Hypha and everything it kept on your phone is gone. Full details: <a href="https://github.com/Anagrarian/hypha-app/blob/main/privacy.md">privacy policy</a>.</p>
+  </section>
+
+  <section aria-labelledby="list">
+    <h2 id="list">Join the early list</h2>
+    <p>News about once a month, early versions to try, and a say in what gets built next. Your email is never sold or shared.</p>
+    <div class="btns"><a class="btn" href="mailto:hyphatheapp@proton.me?subject=Join%20the%20Hypha%20early%20list&amp;body=Yes%2C%20add%20me%20to%20the%20Hypha%20early%20list.%20I%20can%20say%20stop%20any%20time.%0A%0AMy%20name%20%28optional%29%3A%0AMy%20phone%3A%20Android%20/%20iPhone%0A">Join by email</a></div>
+  </section>
+
+  <footer>
+    <span>Hypha · made by Anagrarian</span>
+    <a href="https://github.com/Anagrarian/hypha-app/blob/main/privacy.md">Privacy</a>
+    <a href="https://github.com/Anagrarian/hypha-app/blob/main/terms.md">Terms</a>
+    <a href="mailto:hyphatheapp@proton.me">hyphatheapp@proton.me</a>
+  </footer>
+</main>
+</body>
+</html>

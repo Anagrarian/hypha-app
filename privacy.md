@@ -1,6 +1,6 @@
 # Hypha: privacy policy
 
-Last updated: October 26, 2026
+Last updated: October 31, 2026
 
 Hypha is an Android app that adds captions to your videos. It is made by Anagrarian.
 
@@ -13,6 +13,8 @@ Hypha is an Android app that adds captions to your videos. It is made by Anagrar
 ## When something leaves your phone (only when you choose)
 - **AI helper (optional, off by default):** if you turn it on and add your own Anthropic key, the caption words of a video are sent to Anthropic to suggest fixes or a summary. Videos and sound are never sent. See Anthropic's privacy policy: https://www.anthropic.com/legal/privacy
 - **Posting to YouTube (optional):** if you sign in with Google, the app uploads the videos you choose to your own YouTube channel, with the title and text you write. The app asks only for permission to upload videos. Your sign-in stays on your phone. The app uses YouTube API Services; see the YouTube Terms of Service (https://www.youtube.com/t/terms) and the Google Privacy Policy (https://policies.google.com/privacy).
+- **Posting to Bluesky (optional):** if you connect Bluesky (you sign in on Bluesky's own page), the app posts the video and words you choose to your own Bluesky account. The sign-in key stays on your phone; disconnect any time in Hypha or in Bluesky's settings.
+- **"Post to…" other apps (optional):** Hypha hands the video you pick to the app you pick (TikTok, Instagram and so on), using your phone's share menu. Nothing passes through us.
 - **Other sites (when added):** the same way: only what you choose to post, to your own account, after you sign in.
 - **Updates:** the app checks GitHub for a newer version; only the app's version number is involved.
 
