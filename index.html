@@ -57,6 +57,13 @@ section{display:grid;gap:14px}
 .never{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 14px;list-style:none;padding:0;margin:0}
 .never li::before{content:"✕";color:var(--no);font-weight:700;margin-right:8px}
 .note{color:var(--muted);font-size:.9rem}
+.swap{cursor:pointer}
+.w{display:inline-block;color:var(--accent);transition:opacity .35s ease,transform .35s ease}
+.w.out{opacity:0;transform:translateY(-.35em)}
+.dots{display:flex;gap:6px;margin-top:-6px}
+.dots i{width:8px;height:8px;border-radius:50%;background:var(--line);transition:background .3s}
+.dots i.on{background:var(--accent)}
+@media (prefers-reduced-motion: reduce){.w{transition:none}}
 footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16px}
 </style>
 </head>
@@ -84,10 +91,11 @@ footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16
   </section>
 
   <section aria-labelledby="see">
-    <h2 id="see">What Hypha can see: your farm, your fence</h2>
-    <p>Your phone is your farm. Hypha works inside your fence. Nothing leaves unless you open a gate.</p>
+    <h2 id="see" class="swap" tabindex="0" role="button" aria-label="What Hypha can see. Tap to change the picture">What Hypha can see: your <span class="w" data-k="place">farm</span>, your <span class="w" data-k="wall">fence</span></h2>
+    <div class="dots" aria-hidden="true"></div>
+    <p>Your phone is your <span class="w" data-k="place">farm</span>. Hypha works inside your <span class="w" data-k="wall">fence</span>. Nothing leaves unless you open a gate.</p>
     <div class="farm">
-      <h3>Inside your fence (your phone)</h3>
+      <h3>Inside your <span class="w" data-k="wall">fence</span> (your phone)</h3>
       <div class="inside">
         <div><b>🎥 Your videos</b>stay in your gallery, untouched</div>
         <div><b>🎙️ Your voice → words</b>turned into text right here</div>
@@ -126,5 +134,25 @@ footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16
     <a href="mailto:hyphatheapp@proton.me">hyphatheapp@proton.me</a>
   </footer>
 </main>
+<script>
+/* The place words cycle like a slideshow; tap the heading to jump ahead. */
+(function(){
+  const SETS=[["farm","fence"],["home","walls"],["apartment","walls"],["garden","gate"],["cabin","fence"]];
+  const words=[...document.querySelectorAll(".w")], h=document.getElementById("see"), dots=document.querySelector(".dots");
+  SETS.forEach(()=>dots.appendChild(document.createElement("i")));
+  let i=0,timer=null;
+  const still=matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function show(n){
+    i=(n+SETS.length)%SETS.length;
+    words.forEach(w=>w.classList.add("out"));
+    setTimeout(()=>{words.forEach(w=>{w.textContent=SETS[i][w.dataset.k==="place"?0:1];w.classList.remove("out")})},still?0:350);
+    [...dots.children].forEach((d,k)=>d.classList.toggle("on",k===i));
+  }
+  function start(){if(!still){clearInterval(timer);timer=setInterval(()=>show(i+1),2800)}}
+  h.addEventListener("click",()=>{show(i+1);start()});
+  h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();show(i+1);start()}});
+  show(0);start();
+})();
+</script>
 </body>
 </html>
