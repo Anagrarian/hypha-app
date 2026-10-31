@@ -137,7 +137,7 @@ footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16
 <script>
 /* The place words cycle like a slideshow; tap the heading to jump ahead. */
 (function(){
-  const SETS=[["farm","fence"],["home","walls"],["apartment","walls"],["garden","gate"],["cabin","fence"]];
+  const SETS=[["farm","fence"],["home","yard"],["apartment","walls"],["garden","gate"],["cabin","fence"]];
   const words=[...document.querySelectorAll(".w")], h=document.getElementById("see"), dots=document.querySelector(".dots");
   SETS.forEach(()=>dots.appendChild(document.createElement("i")));
   let i=0,timer=null;
