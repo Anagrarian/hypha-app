@@ -91,11 +91,11 @@ footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16
   </section>
 
   <section aria-labelledby="see">
-    <h2 id="see" class="swap" tabindex="0" role="button" aria-label="What Hypha can see. Tap to change the picture">What Hypha can see: your <span class="w" data-k="place">farm</span>, your <span class="w" data-k="wall">fence</span></h2>
+    <h2 id="see" class="swap" tabindex="0" role="button" aria-label="What Hypha can see. Tap to change the picture">What Hypha can see: your <span class="w" data-k="place">farm</span>, your <span class="w" data-k="wall">hedge</span></h2>
     <div class="dots" aria-hidden="true"></div>
-    <p>Your phone is your <span class="w" data-k="place">farm</span>. Hypha works inside your <span class="w" data-k="wall">fence</span>. Nothing leaves unless you open a gate.</p>
+    <p>Your phone is your <span class="w" data-k="place">farm</span>. Hypha works inside your <span class="w" data-k="wall">hedge</span>. Nothing leaves unless you open a gate.</p>
     <div class="farm">
-      <h3>Inside your <span class="w" data-k="wall">fence</span> (your phone)</h3>
+      <h3>Inside your <span class="w" data-k="wall">hedge</span> (your phone)</h3>
       <div class="inside">
         <div><b>🎥 Your videos</b>stay in your gallery, untouched</div>
         <div><b>🎙️ Your voice → words</b>turned into text right here</div>
@@ -137,7 +137,7 @@ footer{color:var(--muted);font-size:.9rem;display:flex;flex-wrap:wrap;gap:6px 16
 <script>
 /* The place words cycle like a slideshow; tap the heading to jump ahead. */
 (function(){
-  const SETS=[["farm","fence"],["home","yard"],["apartment","walls"],["garden","gate"],["cabin","fence"]];
+  const SETS=[["farm","hedge"],["home","yard"],["apartment","walls"],["garden","gate"],["cabin","fence"]];
   const words=[...document.querySelectorAll(".w")], h=document.getElementById("see"), dots=document.querySelector(".dots");
   SETS.forEach(()=>dots.appendChild(document.createElement("i")));
   let i=0,timer=null;
