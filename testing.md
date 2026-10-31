@@ -8,6 +8,8 @@ It takes about **10 minutes**.
 1. On your phone, tap: **[Download Hypha](https://github.com/Anagrarian/hypha-app/releases/download/latest/Captions.apk)**
 2. Open the downloaded file. If the phone asks, allow installing from this browser.
    - **Samsung:** if it's blocked, go to Settings → Security and privacy → Auto Blocker and turn it off while you install. You can turn it back on after.
+   - **"Blocked by Play Protect":** tap More details → Install anyway.
+   - **The install screen flashes and disappears:** free up space (about 400 MB) and try again.
 3. Open Hypha.
 
 ## 2. First steps
