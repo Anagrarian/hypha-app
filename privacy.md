@@ -1,6 +1,6 @@
 # Hypha: privacy policy
 
-Last updated: October 31, 2026
+Last updated: November 5, 2026
 
 Hypha is an Android app that adds captions to your videos. It is made by Anagrarian.
 
@@ -8,6 +8,7 @@ Hypha is an Android app that adds captions to your videos. It is made by Anagrar
 - Your videos are never uploaded to us. The app links to videos in your gallery and never copies or changes the originals.
 - Speech-to-text runs on your phone, offline.
 - Captions, edits, settings and backups are stored on your phone, or wherever you choose to save a backup.
+- **Typing:** Hypha does not record your keystrokes. Caption edits are kept only when you tap Save. Your phone's keyboard app (like Gboard or Samsung Keyboard) is made by another company and may learn words you type, even ones you delete; you can clear that in the keyboard's own settings.
 - We (the maker of the app) do not collect, store, sell or share any of your data. There are no ads and no tracking.
 
 ## When something leaves your phone (only when you choose)
