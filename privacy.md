@@ -1,14 +1,14 @@
 # Hypha: privacy policy
 
-Last updated: November 5, 2026
+Last updated: November 17, 2026
 
 Hypha is an Android app that adds captions to your videos. It is made by Anagrarian.
 
 ## What stays on your phone
 - Your videos are never uploaded to us. The app links to videos in your gallery and never copies or changes the originals.
 - Speech-to-text runs on your phone, offline.
-- Captions, edits, settings and backups are stored on your phone, or wherever you choose to save a backup.
-- **Typing:** Hypha does not record your keystrokes. Caption edits are kept only when you tap Save. Your phone's keyboard app (like Gboard or Samsung Keyboard) is made by another company and may learn words you type, even ones you delete; you can clear that in the keyboard's own settings.
+- Captions, edits, settings and backups are stored on your phone, or wherever you choose to save a backup. Sign-in keys (Bluesky, and the optional AI key) are never included in backups or phone-to-phone transfers; you sign in again on a new phone.
+- **Typing:** Hypha does not record your keystrokes. Your caption edits save by themselves, on your phone. Your phone's keyboard app (like Gboard or Samsung Keyboard) is made by another company and may learn words you type, even ones you delete; you can clear that in the keyboard's own settings.
 - We (the maker of the app) do not collect, store, sell or share any of your data. There are no ads and no tracking.
 
 ## When something leaves your phone (only when you choose)
@@ -17,7 +17,8 @@ Hypha is an Android app that adds captions to your videos. It is made by Anagrar
 - **Posting to Bluesky (optional):** if you connect Bluesky (you sign in on Bluesky's own page), the app posts the video and words you choose to your own Bluesky account. The sign-in key stays on your phone; disconnect any time in Hypha or in Bluesky's settings.
 - **"Post to…" other apps (optional):** Hypha hands the video you pick to the app you pick (TikTok, Instagram and so on), using your phone's share menu. Nothing passes through us.
 - **Other sites (when added):** the same way: only what you choose to post, to your own account, after you sign in.
-- **Updates:** the app checks GitHub for a newer version; only the app's version number is involved.
+- **Copy for posting:** "Copy for Postoria" and the hashtag buttons put your post words on your phone's clipboard, so you can paste them into a posting app. Hypha doesn't send them anywhere.
+- **Updates:** the copy of Hypha from Google Play gets its updates from Google Play. The copy from GitHub checks GitHub for a newer version; only the app's version number is involved.
 
 ## Early list (only if you join)
 If you join the Hypha early list by email, we keep your email address and what you choose to
